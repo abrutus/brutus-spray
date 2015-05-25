@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>brut.us :: url shortening service</title>
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon"/>
+    <style>
+        @font-face{font-family:'Advent Pro';font-style:normal;font-weight:700;src:local('Advent Pro Bold'),local('AdventPro-Bold'),url(http://themes.googleusercontent.com/static/fonts/adventpro/v1/M4I6QiICt-ey_wZTpR2gK3bFhgvWbfSbdVg11QabG8w.woff) format('woff')}body,html{color:#fff;height:100%;background:#39275B;background-image:-ms-radial-gradient(center,ellipse farthest-corner,#865CD6 0,#39275B 100%);background-image:-moz-radial-gradient(center,ellipse farthest-corner,#865CD6 0,#39275B 100%);background-image:-o-radial-gradient(center,ellipse farthest-corner,#865CD6 0,#39275B 100%);background-image:-webkit-gradient(radial,center center,0,center center,497,color-stop(0,#865CD6),color-stop(1,#39275B));background-image:-webkit-radial-gradient(center,ellipse farthest-corner,#865CD6 0,#39275B 100%);background-image:radial-gradient(ellipse farthest-corner at center,#865CD6 0,#39275B 100%);font-family:'Advent Pro',sans-serif}a{color:#fff;text-decoration:none}a:hover{text-decoration:underline}#title{position:relative;margin-top:-100px;font-family:'Advent Pro',sans-serif;font-weight:700;font-size:60px}#info{position:relative;margin-top:50px}.input_wrapper{display:table;height:100%;width:100%}.input_wrapper form{display:table-cell;text-align:center;vertical-align:middle}#url{outline:0;border:0;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;font-size:25px;width:50%;padding:20px}
+    </style>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="input_wrapper">
+    <form id="shortener" method="POST">
+        <h1 id="title">brut.us</h1>
+        <input name="url" type="text" placeholder="http://a.really/obnoxiously_long_url.html" id="url" /><input id="short" name="short" type="hidden" />
+        <div id="info">
+            <div id="links">
+                <a href="http://github.com/abrutus/url">github</a> &#183;
+                <a href="http://twitter.com/anebg">twitter</a>
+            </div>
+        </div>
+    </form>
+</div>
+<script defer="defer" type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+<script defer="defer" type="text/javascript" src="/static/js/url.js"></script>
+</body>
+</html>
